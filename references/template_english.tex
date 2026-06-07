@@ -1,0 +1,94 @@
+% ======================================================================
+% English LaTeX Template for Power Electronics Study Notes
+% Compile with: pdfLaTeX
+% ======================================================================
+\documentclass[11pt, a4paper]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{mdframed}
+\usepackage{hyperref}
+
+% --- Color definitions ---
+\definecolor{noteblue}{RGB}{0, 70, 180}
+
+% --- Custom commands ---
+\newcommand{\blue}[1]{\textcolor{noteblue}{\textbf{#1}}}
+
+% --- Custom environments ---
+\newmdenv[
+  linecolor=noteblue,
+  linewidth=1pt,
+  topline=true, bottomline=true, leftline=true, rightline=true,
+  backgroundcolor=blue!4,
+  innertopmargin=6pt, innerbottommargin=6pt,
+  innerleftmargin=8pt, innerrightmargin=8pt
+]{keybox}
+
+\newmdenv[
+  linecolor=gray!50,
+  linewidth=0.5pt,
+  backgroundcolor=gray!5,
+  innertopmargin=5pt, innerbottommargin=5pt,
+  innerleftmargin=8pt, innerrightmargin=8pt
+]{figbox}
+
+% --- Header/Footer ---
+% UPDATE these for each set of notes:
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textit{Source Title Here}}
+\lhead{\textit{Topic / Chapter Notes}}
+\rfoot{\thepage}
+
+% --- Section formatting ---
+\titleformat{\section}{\large\bfseries\color{noteblue}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries\color{noteblue!80}}{}{0em}{}
+
+% --- List formatting ---
+\setlist[itemize]{itemsep=1pt, topsep=3pt}
+
+% --- Hyperlink colors ---
+\hypersetup{colorlinks=true, linkcolor=noteblue, urlcolor=noteblue}
+
+\begin{document}
+
+% --- Title block (textbook) ---
+\begin{center}
+  {\LARGE \textbf{Chapter X: Chapter Title}} \\[4pt]
+  {\LARGE \textbf{Section X.X: Section Title}} \\[6pt]
+  {\large \textit{Author(s) --- Source Title}} \\[2pt]
+  {\small Study Notes By Catastrophy\_ame}
+\end{center}
+
+% --- Title block (paper / app note) ---
+% \begin{center}
+%   {\LARGE \textbf{Topic Title}} \\[6pt]
+%   {\large \textit{Based on: Paper/AppNote Title (Author, Year)}} \\[2pt]
+%   {\small Study Notes By Catastrophy\_ame}
+% \end{center}
+
+\vspace{0.5em}
+\hrule
+\vspace{1em}
+
+% === CONTENT STARTS HERE ===
+% Suggested structure:
+% 1. Application context and motivation
+% 2. Topology/technique selection (comparison table)
+% 3. Underlying physics
+% 4. Circuit topology and equivalent circuit
+% 5. Stage-by-stage operating analysis
+% 6. Mathematical derivations
+% 7. Design trade-offs and practical considerations
+% 8. Advanced variations
+% 9. Summary knowledge map
+
+
+\end{document}
